@@ -1,0 +1,40 @@
+//
+   Created by xavier on 11/05/14.
+extends layout
+block content
+
+    div.container
+        div.col-sm-6.col-sm-offset-3
+            div.jumbotron
+                div.text-center
+                    if message.length > 0
+                        div.alert.alert-danger
+                            p= message
+
+                h2.form-signin-heading
+                    span.fa.fa-sign-in Login de usuario
+
+                form(action="/login", method="post")
+                    div.formGroup
+                        label user name:
+                        input.form-control(type="text", name="username", placeholder="user name")
+                    div.formGroup
+                        label password:
+                        input.form-control(type="password", name="password", placeholder="password")
+                    br
+                    div.form-group
+                        div.col-sm-offset-0.col-sm-10
+                            div.checkbox
+                                label
+                                    input(type="checkbox", value="remember-me")
+                                    | recordar contraseña
+                    br
+                    br
+                    input.btn.btn-warning.btn-lg(type="submit", value="login")
+
+
+                hr
+                p Necesita registrar una cuenta?
+                    a(href='/signup')   Signup
+                p Ir a la página principal
+                    a(href='/')   Home

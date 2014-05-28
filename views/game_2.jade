@@ -1,0 +1,101 @@
+extends layout
+
+
+
+block content
+
+    append head
+
+        script(src="/javascripts/game.js")
+        script(src="/javascripts/client.js")
+
+    div.container
+        div.col-sm-8.col-sm-offset-2
+            div.jumbotron
+                h1.text-center Online Card Game
+
+                div#username.alert-info.text-center
+                    p
+
+
+                table#currentPlayer.table
+                    thead
+                        tr
+                            th Jugador
+                            th
+                            th
+                            th
+                            th
+                            th
+                    tbody
+                        tr
+                            td.player Jugador 1
+                            td.hand carta 1
+                            td.hand carta 2
+                            td.hand carta 3
+                            td.hand carta 4
+                            td.hand carta 5
+                        tr
+                            td
+                            td.discard
+                                input(type="checkbox")
+                                | discard
+                            td.discard
+                                input(type="checkbox")
+                                | discard
+                            td.discard
+                                input(type="checkbox")
+                                | discard
+                            td.discard
+                                input(type="checkbox")
+                                | discard
+                            td.discard
+                                input(type="checkbox")
+                                | discard
+
+                table#room.table
+                    thead
+                        tr
+                            th Jugador
+                            th
+                            th
+                            th
+                            th
+                            th
+                    tbody
+                        tr
+                            td.player Jugador 2
+                            td.hand carta 1
+                            td.hand carta 2
+                            td.hand carta 3
+                            td.hand carta 4
+                            td.hand carta 5
+                        tr
+                            td.player Jugador 3
+                            td.hand carta 1
+                            td.hand carta 2
+                            td.hand carta 3
+                            td.hand carta 4
+                            td.hand carta 5
+                        tr
+                            td.player Jugador 4
+                            td.hand carta 1
+                            td.hand carta 2
+                            td.hand carta 3
+                            td.hand carta 4
+                            td.hand carta 5
+                        tr
+                            td.player Jugador 5
+                            td.hand carta 1
+                            td.hand carta 2
+                            td.hand carta 3
+                            td.hand carta 4
+                            td.hand carta 5
+
+    div.container
+            div.col-sm-8.col-sm-offset-2
+                div.jumbotron
+                    div#messagesDiv.alert.alert-danger
+                        p
+                    div#controll.col-sm-offset-5
+

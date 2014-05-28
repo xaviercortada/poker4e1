@@ -1,0 +1,51 @@
+extends layout
+
+
+
+block content
+
+    append head
+
+        script(src="/javascripts/player.js")
+        script(src="/javascripts/client.js")
+
+    div.container
+        div.col-sm-8.col-sm-offset-2
+            div.jumbotron
+                h2.text-center Poker Online Game
+
+                div#username.alert-info.text-center
+                    p
+
+
+                table#currentPlayer.table
+                    thead
+                        tr
+                            th Jugador
+                            th
+                            th
+                            th
+                            th
+                            th
+                    tbody
+
+                table#room.table
+                    thead
+                        tr
+                            th Jugador
+                            th
+                            th
+                            th
+                            th
+                            th
+                    tbody
+
+    div.container
+            div.col-sm-8.col-sm-offset-2
+                div.jumbotron
+                    div#room_messages.alert.alert-danger(hidden=true)
+                        p
+                    div#messagesDiv.alert.alert-danger
+                        p
+                    div#controll.col-sm-offset-5
+
