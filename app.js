@@ -29,10 +29,10 @@ function compile(str, path) {
 
 var port =  process.env.Port || 3001;
 
-admin
-RK5Z8ughZxB4
-database: nodejs
-url:  mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT/
+//admin
+//RK5Z8ughZxB4
+//database: nodejs
+//url:  mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT/
 
 var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
